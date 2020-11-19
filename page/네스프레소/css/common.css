@@ -99,7 +99,7 @@ top:0
 	
 }
 .in_header .title_wrap .dp2 {height:0; overflow: hidden; transition:all .5s linear; opacity:0}
-.in_header .title_wrap .dp2 > li {line-height: 1.5 }
+.in_header .title_wrap .dp2 > li {line-height: 15px; }
 .in_header .title_wrap .dp2 > li > a {color:#fff; font-size:14px; padding:13px 0}
 .in_header:hover .title_wrap .dp2 {height:150px; overflow: hidden; opacity:1;}
 .in_header .title_wrap .dp2 > li > a:hover {
@@ -236,12 +236,12 @@ top:0
     font-size: 20px;
 }
 .section_2 .grid .txt_box h3 {
-	font-size: 35px;
+	font-size: 29px;
 	font-weight: 550;
 }
 
 .section_2 .grid .txt_box p {
-	margin: 8px 0 23px;	
+	margin: 14px 0 14px;	
 	font-size: 18px;
 }
 
@@ -251,8 +251,13 @@ top:0
 /*	border: 1px solid #817e7c;*/
 	box-sizing:border-box;
 	text-align: center;
-	line-height: 46px;
-	float: right;
+	line-height: 46px;	
+}
+.section_2 .grid .txt_box .btn::after {
+	content: '';
+	clear: both;
+	display: block;
+	
 }
 
 .section_2 .grid .txt_box .btn a {
@@ -268,6 +273,20 @@ top:0
     background-color: #474747;
     border: 1px solid #474747;
 	color: #E5E5E5;
+}
+
+/*
+.section_2 .grid .txt_box .arrow {
+width: 22px; 
+height: 22px; 
+border-radius: 50%; 
+background-color: #000; 
+float: left; 
+}
+*/
+.section_2 .grid .txt_box .bult .counttxt {
+	float: left;
+	margin-left: 29px;
 }
 
 .section_2 .con_box .event .right_box {
@@ -594,16 +613,16 @@ background-position: -47px -30px
 	color: #fff;
 }
 .section_5 .image_box .txt_box h3 {
-	font-size: 30px;
+	font-size: 28px;
 	letter-spacing: -3.5px;
-	margin:20px 0 0 20px;
+	margin:31px 0 0 20px;
 }
 .section_5 .image_box .txt_box p {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 300;
 	color:#bbb;
 	letter-spacing: -1.5px;
-	margin:15px 0 0 20px;
+	margin:6px 0 0 20px;
 }
 .section_5 .txt_box .arrow {
 	height: 15px;

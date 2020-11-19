@@ -49,6 +49,53 @@ $(function() {
 		}		
 		$("header").addClass("ty1");
 		$("html, body").animate({"scrollTop" : 0});
-	})
+	});
+	
+		
+	
+	
+
+	
+
+	
+	
 
 });
+
+	var lypop = function(e, _this) { 
+   e.preventDefault();
+   var _this = $(_this);
+   var _thisDataNum = _this.attr("data-num");
+   
+   var _origin = $(document).find(".lypop");
+	 _origin.removeClass("horzn");	
+	_origin.removeClass("small");
+   console.log(_thisDataNum);		
+
+		
+   if(_thisDataNum == 5 || _thisDataNum == 6) { 
+   		_origin.addClass("small");
+   } else if(_thisDataNum == 7) { 
+   		_origin.addClass("horzn");
+   } 
+  
+   		
+   
+   
+   
+   _origin.addClass("on");
+   $('body').css('overflow','hidden');
+   
+   _origin.find(".lypopcont .simg img").attr("src", "img/detailview0" + _thisDataNum +".jpg");
+   
+   
+};
+
+var lypopClose = function(e, _this) { 
+   e.preventDefault();
+   var _this = $(_this);
+   var _origin = $(document).find(".lypop");      
+   _origin.removeClass("on");
+   $('body').removeAttr('style');      
+};
+//pop-up
